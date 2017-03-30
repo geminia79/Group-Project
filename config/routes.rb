@@ -1,5 +1,17 @@
 Rails.application.routes.draw do
 
+  # get 'rooms/index'
+  #
+  # get 'rooms/show'
+  #
+  # get 'rooms/new'
+  #
+  # get 'rooms/create'
+  #
+  # get 'rooms/edit'
+  #
+  # get 'rooms/update'
+
   root 'pages#home'
 
   devise_for 	:users,
@@ -9,7 +21,9 @@ Rails.application.routes.draw do
                               :registrations => 'registrations'
                               }
 
-            
+
     resources :users, only: [:show]
+    resources :rooms # this will replaced those above get 'rooms/index' and others
+    resources :photos  
 
 end

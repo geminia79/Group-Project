@@ -24,9 +24,16 @@ gem 'devise'
 
 gem 'toastr-rails'
 
+gem 'paperclip'
+
 gem 'omniauth'
 
 gem 'omniauth-facebook'
+
+gem 'omniauth-google-oauth2'
+
+gem 'figaro'
+
 # Use jquery as the JavaScript library
 gem 'jquery-rails'
 # Turbolinks makes navigating your web application faster. Read more: https://github.com/turbolinks/turbolinks
